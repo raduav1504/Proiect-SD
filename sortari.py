@@ -225,7 +225,7 @@ def run(name, func, arr, fout, inplace=True):
         fout.write(f"[Exceptie] {name} a eșuat: {e}\n")
 
 def main():
-    with open("tests.in", "r") as fin, open("results.txt", "w") as fout:
+    with open("tests.txt", "r") as fin, open("results.txt", "w") as fout:
         T = int(fin.readline())
         tests = [tuple(map(int, fin.readline().split())) for _ in range(T)]
 

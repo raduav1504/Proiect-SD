@@ -1,0 +1,50 @@
+
+=== Test 1: N = 1000, Max = 1000000 ===
+RadixSort Base10: 0.00361 sec
+RadixSort Base2^16: 0.02443 sec
+MergeSort: 0.00403 sec
+ShellSort: 0.00322 sec
+QuickSort: 0.00128 sec
+HeapSort: 0.00365 sec
+BucketSort: 0.00105 sec
+Native sorted(): 0.0 sec
+
+=== Test 2: N = 5000, Max = 1000 ===
+RadixSort Base10: 0.0086 sec
+RadixSort Base2^16: 0.0156 sec
+MergeSort: 0.0258 sec
+ShellSort: 0.0219 sec
+QuickSort: 0.02154 sec
+HeapSort: 0.02563 sec
+BucketSort: 0.00439 sec
+Native sorted(): 0.0 sec
+
+=== Test 3: N = 10000, Max = 10000 ===
+RadixSort Base10: 0.03044 sec
+RadixSort Base2^16: 0.01955 sec
+MergeSort: 0.07265 sec
+ShellSort: 0.0707 sec
+QuickSort: 0.02837 sec
+HeapSort: 0.06713 sec
+BucketSort: 0.00672 sec
+Native sorted(): 0.00435 sec
+
+=== Test 4: N = 20000, Max = 100000000 ===
+RadixSort Base10: 0.10857 sec
+RadixSort Base2^16: 0.05222 sec
+MergeSort: 0.10429 sec
+ShellSort: 0.1363 sec
+QuickSort: 0.0603 sec
+HeapSort: 0.12483 sec
+BucketSort: 0.0137 sec
+Native sorted(): 0.00405 sec
+
+=== Test 5: N = 50000, Max = 1000000 ===
+RadixSort Base10: 0.17652 sec
+RadixSort Base2^16: 0.09807 sec
+MergeSort: 0.31931 sec
+ShellSort: 0.42313 sec
+QuickSort: 0.17302 sec
+HeapSort: 0.37858 sec
+BucketSort: 0.05833 sec
+Native sorted(): 0.01679 sec

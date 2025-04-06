@@ -1,4 +1,4 @@
-###Comparare Algoritmi de Sortare
+## Comparare Algoritmi de Sortare
 
 Acest proiect implementează, testează și compară performanța mai multor algoritmi de sortare pe seturi de date generate aleatoriu. Se analizează timpii de execuție în funcție de dimensiunea și distribuția datelor pentru a evidenția avantajele și dezavantajele fiecărui algoritm.
 

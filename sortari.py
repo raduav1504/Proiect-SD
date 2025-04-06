@@ -1,7 +1,11 @@
 import time
 import random
 
-# --- Counting Sort (pentru Radix sort baza 10) ---
+
+
+
+
+# Counting Sort (pentru Radix sort baza 10)
 def counting_sort(arr, exp):
     n = len(arr)
     output = [0] * n
@@ -31,7 +35,10 @@ def radix_sort_base10(arr):
         counting_sort(arr, exp)
         exp *= 10
 
-# --- Radix Sort baza 2^16 ---
+
+
+
+#  Radix Sort baza 2^16 
 def radix_sort_base2_16(arr):
     if not arr:
         return
@@ -57,7 +64,10 @@ def radix_sort_base2_16(arr):
             arr[i] = output[i]
         shift += 16
 
-# --- Merge Sort ---
+
+
+
+# Merge Sort 
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -77,7 +87,10 @@ def merge(left, right):
             j += 1
     return result + left[i:] + right[j:]
 
-# --- Shell Sort ---
+
+
+
+#  Shell Sort 
 def shell_sort(arr):
     n = len(arr)
     gap = n // 2
@@ -91,7 +104,9 @@ def shell_sort(arr):
             arr[j] = temp
         gap //= 2
 
-# --- Quick Sort (cu pivot mediana din 3) ---
+
+
+# Quick Sort (cu pivot mediana din 3)
 def median_of_three(arr, a, b, c):
     values = [(arr[a], a), (arr[b], b), (arr[c], c)]
     values.sort()
@@ -119,7 +134,10 @@ def quick_sort_util(arr, low, high):
 def quick_sort(arr):
     quick_sort_util(arr, 0, len(arr) - 1)
 
-# --- Heap Sort ---
+
+
+
+#Heap Sort 
 def heapify(arr, n, i):
     largest = i
     l = 2 * i + 1
@@ -140,7 +158,8 @@ def heap_sort(arr):
         arr[0], arr[i] = arr[i], arr[0]
         heapify(arr, i, 0)
 
-# --- Bucket Sort (pe float între 0 și 1) ---
+
+# Bucket Sort (pe float între 0 și 1)
 def bucket_sort(arr):
     n = len(arr)
     buckets = [[] for _ in range(n)]
@@ -154,7 +173,12 @@ def bucket_sort(arr):
         result.extend(bucket)
     return result
 
-# --- Testare și măsurare timp ---
+
+
+
+
+
+
 def test_sort(sort_func, arr, inplace=True):
     copy = arr[:] if inplace else arr
     start = time.time()
@@ -166,7 +190,11 @@ def test_sort(sort_func, arr, inplace=True):
     assert copy == sorted(copy), f"Sortare greșită cu {sort_func.__name__}"
     return end - start
 
-# --- Generatoare de date aleatoare ---
+
+
+
+
+
 def generate_random_integers(N, Max):
     return [random.randint(0, Max) for _ in range(N)]
 

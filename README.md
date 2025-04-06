@@ -14,7 +14,7 @@ Acest proiect implementează, testează și compară performanța mai multor alg
 
 ## Descriere
 
-Proiectul are ca scop evaluarea performanței diferiților algoritmi de sortare pe diverse seturi de teste, generate conform specificațiilor din fișierul `tests.in`. Fiecare test conține două valori: 
+Proiectul are ca scop evaluarea performanței diferiților algoritmi de sortare pe diverse seturi de teste, generate conform specificațiilor din fișierul `tests.txt`. Fiecare test conține două valori: 
 - **N** – numărul de elemente ce trebuie sortate
 - **Max** – valoarea maximă posibilă pentru elementele generate
 
@@ -23,7 +23,7 @@ Rezultatele sunt afișate în consolă și salvate în fișierul `results.txt`.
 
 ### Utilizarea aplicatiei
 
-- Asigură-te că fișierul `tests.in` este prezent în același director cu scriptul.
+- Asigură-te că fișierul `tests.txt` este prezent în același director cu scriptul.
 - Deschide un terminal și rulează:
      ```
      python sortari.py
